@@ -3,12 +3,12 @@
 $.(document).ready(function(e){
 	document.addEventListener("deviceready",function(){
 		
-		$.('#izquerda').on ("swipeleft", function(){
+		$('#izquerda').on ("swipeleft", function(){
 			navigator.notification.alert("Deslizo a la izquierda", function(){"Aplicacion5","Aceptar"});
 		});//barrer izquierda 
 		
 		
-		$.('#derecha').on ("swiperight", function(){
+		$('#derecha').on ("swiperight", function(){
 			navigator.notification.confirm("¿Que quieres hacer?", function(opt){
 				switch(opt)
 		{
