@@ -3,7 +3,7 @@
 $.(document).ready(function(e){
 	document.addEventListener("deviceready",function(){
 		
-		$('#izquerda').on ("swipeleft", function(){
+		$('#izquierda').on ("swipeleft", function(){
 			navigator.notification.alert("Deslizo a la izquierda", function(){"Aplicacion5","Aceptar"});
 		});//barrer izquierda 
 		
