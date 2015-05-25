@@ -7,8 +7,10 @@ $.(document).ready(function(e){
 			navigator.notification.alert("Deslizo a la izquierda", function(){"Aplicacion5","Aceptar"});
 		});//barrer izquierda 
 		
+		
 		$.('#derecha').on ("swiperight", function(){
-			navigator.notification.confirm("¿Que quieres hacer?", function(opt){switch(opt)
+			navigator.notification.confirm("¿Que quieres hacer?", function(opt){
+				switch(opt)
 		{
 			
 			case 1:
@@ -22,6 +24,7 @@ $.(document).ready(function(e){
 			},"Aplicacion5","Beep,Vibrar,Cancelar");//confirm
 			
 		});//barrer derecha
-		
+	
+	
 	},false);//ready device
 });//document
